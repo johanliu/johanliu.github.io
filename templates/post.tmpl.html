@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Blog" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" inline href="/assets/normalize.css">
+  <link rel="stylesheet" inline href="/assets/main.css">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Johan Liu">
+  <title>{{.Title}}</title>
+</head>
+<body>
+  <div id="everything">
+  <header role="banner">
+             <b><a href="/">{{.BlogTitle}}</a></b>
+  </header>
+
+  <hr>
+
+  <main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <h1 class="entry-title" itemprop="headline">{{.Title}}</h1>
+      <section itemprop="entry-text">
+        {{.Body}}
+      </section>
+    </article>
+  </main>
+
+  <hr>
+  <!--
+  <script type="text/javascript" src="//www.redditstatic.com/button/button3.js"></script>
+  <hr>
+  -->
+
+  <!--
+  <div class="entry-meta">
+    Please share this post if you liked it.
+  </div>
+  -->
+  {{with .Date}}
+  <div class="entry-meta">
+    <time itemprop="datePublished" datetime="{{.Format "January 02, 2006"}}">
+      {{.Format "January 02, 2006"}}
+    </time>
+  </div>
+  {{end}}
+
+</body>
+</html>

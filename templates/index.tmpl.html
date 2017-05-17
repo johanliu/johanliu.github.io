@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Blog" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" inline href="/assets/normalize.css">
+  <link rel="stylesheet" inline href="/assets/main.css">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Johan Liu">
+  <title>{{.Title}}</title>
+</head>
+
+<body>
+
+  <div id="everything">
+    <header role="banner">
+      <b><a href="/">{{.Title}}</a></b>
+    </header>
+
+    <hr>
+
+    <main role="main" class="list">
+      {{ range .Posts }} {{ if not .Draft }}
+      <article itemscope itemtype="http://schema.org/Blog">
+        {{with .Date}}
+        <span class="entry-meta col">
+          <time itemprop="datePublished" datetime="{{.Format "January 02, 2006"}}">
+            {{.Format "Jan 2006"}}
+          </time>
+        </span> {{end}}
+        <a href="{{.RelativeLink}}">{{.Title}}</a>
+      </article>
+      {{ end }} {{ end }}
+    </main>
+
+    <hr>
+    <footer role="contentinfo">
+      <a href="https://github.com/johanliu" target="_blank">Github</a> &middot; 
+      <a href="http://weibo.com/yyxqb" target="_blank">Weibo</a> &middot; 
+      <a href="/index.xml" target="_blank">RSS</a>
+    </footer>
+
+    <hr>
+  </div>
+
+</body>
+
+</html>
