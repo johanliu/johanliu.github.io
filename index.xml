@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Johan Liu</title>
+    <link>https://johanliu.github.io/</link>
+    <description>Recent content on Johan Liu</description>
+    <generator>Blogo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 May 2017 16:52:24 +0800</lastBuildDate>
+    <atom:link href="https://johanliu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My first blog</title>
+      <link>https://johanliu.github.io/post/first</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://johanliu.github.io/post/first</guid>
+      <description># This is my blog��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������</description>
+    </item>
+    
+  </channel>
+</rss>
